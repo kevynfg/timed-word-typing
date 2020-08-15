@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+}
+
+.container{
+    height: 100vh;
+    margin: auto;
+    max-width: 980px;
+}
+
+.flex { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  h1 {
+      margin: 10px 0;
+      text-align: center;
+      font-size: 5.6rem;
+  }
+
+  table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200, 200, 200);
+      letter-spacing: 1px;
+      font-size: 2.8rem; 
+      display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+  }
+
+  td {
+      border: 1px solid rgb(190, 190, 190);
+      padding: 10px;
+      display: flex;
+  }
+
+  tr {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
