@@ -1,15 +1,19 @@
 var modalidades = 
     {
-        cores: ['azul', 'vermelho', 'amarelo', 'branco', 'rosa', 'branco', 'rosa', 'branco', 'rosa', 'alou']
+    redes: [
+    'src/img/facebook.svg',
+    'src/img/gmail.svg',
+    'src/img/instagram.svg',
+    'src/img/linkedin.svg',
+    'src/img/twitter.svg'
+        ]
     }
 
+var i = 0
 
-const montadorTabela =  modalidades.cores.forEach(row => {
-    //const tablerow = document.querySelectorAll('tr');
-    let novosDados = document.querySelectorAll('td');
-    for(let i = 0; i < novosDados.length; i++){
-        novosDados[i].innerHTML = row
-    }
-});
+const montadorTabela = modalidades.redes.forEach(row => {
+    let imgs = document.querySelectorAll('img');  
+    imgs[i].src = row
+    i++
+})
 
-console.log(montadorTabela)
