@@ -47,8 +47,15 @@ html, body {
   }
 
   input{
-    display: flex;
     align-items: center;
     padding: 10px 10px;
-    width: 30vw;
+    width: 35vw;
+    position: absolute;
+  }
+
+  label {
+    position: relative;
+    left: 20%;
+    font-size: 5.6rem;
+    margin: 0 20px;
   }
