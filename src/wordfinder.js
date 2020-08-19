@@ -33,15 +33,18 @@ textInput.addEventListener('keypress', (event) => {
         // console.log(textValue)
         // const palavrasRedes = modalidades.textoRedes.filter(palavra => palavra.includes(textValue))
         const palavraRedes = modalidades.textoRedes.filter(palavra => { 
-            if (palavra == textValue.toLowerCase()) {
-                labelPontos.innerText = `${pontos.length+1}`
+            if(pontos.includes(palavra)) {
                 textInput.value = ''
-                 return pontos.push(palavra)
+             } else if (palavra == textValue.toLowerCase()) {
+                    labelPontos.innerText = `${pontos.length+1}`
+                    pontos.push(palavra)
+                    if(pontos.length == modalidades.textoRedes.length) {
+                        alert('Boa você ganhou um biscoito!')
+                    }
              } else {
-                return textInput.value = ''
-                //  console.log(palavraRedes)
-             }   
-        }) 
+                 textInput.value = ''
+             } 
+        })  
     }
 })
 
